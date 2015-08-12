@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Search Home</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="age_group">Age group</label>
+					<select id="age_group" class="form-control">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="sex">Gender</label>
+					<select id="sex" class="form-control">
+						<option value="1" selected="selected">Male</option>
+						<option value="2">Female</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="diagnosis">Admission diagnosis</label>
+					<select id="diagnosis" class="form-control"></select>
+				</div>
+				<button type="button" id="search" class="btn btn-default">Search</button>
+			</form>
+			</div>
+		</div>
+		
+		<div class="container" id="searchResults"></div>
+		<div class="container" id="categoryResults">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="table-responsive">
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="table-responsive">
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="table-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/task1.js') }}"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Data Mining</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<style>
+			#radioGroup{
+				margin-bottom: 15px;
+			}
+		</style>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+			<label for="radioGroup">Attributes</label>
+			<div id="radioGroup">
+			</div>
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="support">Support in %</label>
+					<input type="number" min="0" max="100" class="form-control" id="support" placeholder="Support">
+				</div>
+				<div class="form-group">
+					<label for="support">Confidence in %</label>
+					<input type="number" min="0" max="100" class="form-control" id="confidence" placeholder="Confidence">
+				</div>
+				<button type="button" id="mine" class="btn btn-default">Mine</button>
+			</form>
+			</div>
+		</div>
+		<div class="container" id="mineResults"></div>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/task3.js') }}"></script>
+	</body>
+</html>
